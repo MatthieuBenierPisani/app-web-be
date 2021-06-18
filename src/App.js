@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import './App.css';
-import AuthButton from "./AuthButton";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-class App extends Component {
+import Login from "./components/LoginComponent";
+import SignUp from "./components/SignUpComponent";
+
+import AuthButton from "./components/AuthButton";
+
+/*CHECK IF LOGGED CLASS
+class LoggedInChecker extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,6 +18,8 @@ class App extends Component {
   }
 
   render() {
+
+    LOGGED IN CHECKER
 
     let {isLoggedIn} = this.state;
 
@@ -22,15 +31,33 @@ class App extends Component {
       }
     }
 
+    IN THE RETURN : <AuthButton isLoggedIn={isLoggedIn} />
+    
+    
     return (
       <div className="App">
         <h1>
           This is a Demo showing several ways to implement Conditional Rendering in React.
         </h1>
-        <AuthButton isLoggedIn={isLoggedIn} />
       </div>
     );
   }
+}
+*/
+
+function App() {
+  return (<Router>
+      <div className="auth-wrapper">
+        <div className="auth-inner">
+          <Switch>
+            <Route exact path='/' component={Login} />
+            <Route path="/se-connecter" component={Login} />
+            <Route path="/s'inscrire" component={SignUp} />
+          </Switch>
+        </div>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
