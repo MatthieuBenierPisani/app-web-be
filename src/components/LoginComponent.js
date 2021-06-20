@@ -1,13 +1,18 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import SignUp from "./SignUpComponent";
+import logo from "./assets/be_logo.png";
 
 export default class Login extends Component {
     render() {
         return (
             <form>
-                <h3>Connexion à la plateforme Click&Collect BetterEarth</h3>
-
+                <div className="img-padding">
+                    <img src={logo} width="350" style={{float: "right"}}/>
+                </div>
+                <div className="h3">
+                <h3 style={{color: "#084A83", fontFamily: "Roboto", fontWeight: "600"}}>Connexion <br /> <span style={{fontWeight: "200", fontFamily: "Roboto", fontSize: "19px"}}>
+                    à la plateforme Click&Collect BetterEarth</span></h3>
+                </div>
                 <div className="form-group">
                     <input type="email" className="form-control" placeholder="Identifiant" />
                 </div>
@@ -16,9 +21,15 @@ export default class Login extends Component {
                     <input type="password" className="form-control" placeholder="Mot de passe" />
                 </div>
                 <div className="inBetween"></div>
-                <Link className="forgot-password" to={"/s'inscrire"}>Se créer un compte</Link>
-                <div className="inBetween"></div>
                 <button type="submit" className="btn btn-primary btn-block">Se connecter</button>
+                <div className="inBetween"></div>
+                <div className="centered">
+                    <Link className="forgot-password" to={"/mot-de-passe-oublie"}>Mot de passe oublié ?</Link>
+                </div>
+                <div className="inBetween"></div>
+                <button type="submit" className="btn btn-primary-two btn-block">
+                    <Link to={"/s'inscrire"} style={{textDecoration: "none", color: "black"}}>Se créer un compte</Link>
+                </button>
             </form>
             
         );

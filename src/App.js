@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Login from "./components/LoginComponent";
 import SignUp from "./components/SignUpComponent";
+import ForgottenPassword from "./components/ForgottenPassword";
 
 import AuthButton from "./components/AuthButton";
 
@@ -53,6 +54,7 @@ function App() {
             <Route exact path='/' component={Login} />
             <Route path="/se-connecter" component={Login} />
             <Route path="/s'inscrire" component={SignUp} />
+            <Route path="/mot-de-passe-oublie" component={ForgottenPassword} />
           </Switch>
         </div>
       </div>

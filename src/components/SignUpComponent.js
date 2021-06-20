@@ -1,35 +1,43 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Login from "./SignUpComponent";
+import logo from "./assets/be_logo.png";
 
 export default class SignUp extends Component {
     render() {
         return (
             <form>
-                <h3>Sign Up</h3>
-
-                <div className="form-group">
-                    <label>First name</label>
-                    <input type="text" className="form-control" placeholder="First name" />
+                <div className="img-padding">
+                    <img src={logo} width="350" style={{float: "right"}}/>
                 </div>
-
-                <div className="form-group">
-                    <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Last name" />
+                <div className="h3">
+                <h3 style={{color: "#084A83", fontFamily: "Roboto", fontWeight: "600"}}>Inscription <br /> <span style={{fontWeight: "200", fontFamily: "Roboto", fontSize: "19px"}}>
+                    à la plateforme Click&Collect BetterEarth</span></h3>
                 </div>
-
                 <div className="form-group">
-                    <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <input type="text" className="form-control" placeholder="Identifiant" />
                 </div>
-
+                <div className="inBetween"></div>
                 <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <input type="email" className="form-control" placeholder="Email" />
                 </div>
-
-                <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
-                <Link className="forgot-password" to={"/se-connecter"}>Vous avez déjà un compte ?</Link>
+                <div className="inBetween"></div>
+                <div className="form-group">
+                    <input type="password" className="form-control" placeholder="Mot de passe" />
+                </div>
+                <div className="inBetween"></div>
+                <div className="form-group">
+                    <input type="password" className="form-control" placeholder="Confirmer le mot de passe" />
+                </div>
+                <div className="inBetween"></div>
+                <button type="submit" className="btn btn-primary btn-block">Se créer un compte</button>
+                <div className="inBetween"></div>
+                <div className="centered">
+                    <Link className="forgot-password" to={"/se-connecter"}>Vous avez déjà un compte ?</Link>
+                </div>
+                <div className="inBetween"></div>
+                <button type="submit" className="btn btn-primary-two btn-block">
+                    <Link to={"/se-connecter"} style={{textDecoration: "none", color: "black"}}>Se connecter</Link>
+                </button>
             </form>
         );
     }
