@@ -1,0 +1,46 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    display: flex;
+}
+.wrapper div p {
+    border: 1px solid red;
+    float: left;
+    padding: 0 0.5em;
+}
+.wrapper ul {
+    list-style-type: none;
+    width: 100%;
+}
+.wrapper ul li {
+    float: right;
+}
+.wrapper ul li a {
+    padding: 0 1em;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+.header-inner {
+    background: #ffffff;
+    box-shadow: -15px -10px 0px 1px #084A83;
+    padding: 40px 55px 45px 55px;
+    border-radius: 0px;
+    transition: all .3s;
+}
