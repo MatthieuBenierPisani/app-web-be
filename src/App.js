@@ -9,11 +9,16 @@ import FoireAuxQuestions from "./components/AfterLogin/FAQ";
 import Contact from "./components/AfterLogin/Contact";
 import Home from "./components/AfterLogin/Home";
 
+import Header from "./components/AfterLogin/Header";
+import Footer from "./components/AfterLogin/Footer";
+
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  return (<Router>
+  return (
+
+    <Router>
           <Switch>
             <Route exact path='/' component={Login} />
             <Route path="/se-connecter" component={Login} />

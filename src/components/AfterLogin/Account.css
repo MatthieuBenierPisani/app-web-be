@@ -11,8 +11,8 @@
     display: flex;
     /*flex-direction: column;*/
     /*padding: 1rem;*/
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -57,13 +57,14 @@ nav {
 }
 
 .selected .menu-link {
-    color: #3069f0;
+    color: #3069f0!important;
 }
 
 .menu-item .menu-link {
     color: #323233;
     display: block;
     text-decoration: none;
+    font-weight: 500;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -123,6 +124,7 @@ section {
 
 *, *::before, *::after {
     box-sizing: border-box;
+    font-family: Roboto;
 }
 
 .form-column {
@@ -141,7 +143,7 @@ section {
 }
 
 .form-label {
-    color: blue;
+    color: #868686;
     font-weight: normal;
     font-size: 1rem;
     line-height: title;
