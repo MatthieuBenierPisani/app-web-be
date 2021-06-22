@@ -1,0 +1,207 @@
+@media only screen and (min-width: 64rem) {
+    .account {
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem 1.5rem 2rem 0;
+    }
+}
+
+.account {
+    display: flex;
+    /*flex-direction: column;*/
+    /*padding: 1rem;*/
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .account-nav {
+        margin-right: 3.5rem;
+        width: 23rem;
+    }
+    .side-box-menu {
+        width: 16rem;
+    }
+}
+
+.account-nav {
+    border: 1px solid #084A83;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+nav {
+    display: block;
+}
+
+.side-box-menu {
+    padding-right: 3rem;
+    padding-left: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+.selected {
+    border-left: 4px solid #3069f0;
+    font-weight: 700;
+    padding-left: 2.25rem;
+}
+
+.menu-item {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 25px 0;
+    padding-left: 2.5rem;
+}
+
+.selected .menu-link {
+    color: #3069f0;
+}
+
+.menu-item .menu-link {
+    color: #323233;
+    display: block;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .main-box {
+        width: 42rem;
+    }
+}
+
+.main-box {
+    border: 1px solid #084A83;
+    padding: 2rem;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+}
+
+main {
+    display: block;
+}
+
+.main-header {
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 4rem;
+    margin: 0;
+    font-size: 1.625rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+section {
+    display: block;
+}
+
+.account-form {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+    .form-layout-grid {
+        grid-column-gap: 2rem;
+        -webkit-column-gap: min(calc(100% / 11), 2rem);
+        column-gap: min(calc(100% / 11), 2rem);
+    }
+}
+
+.form-layout-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    display: grid;
+    width: 100%;
+    row-gap: 1rem;
+    grid-column-gap: 0.5rem;
+    -webkit-column-gap: min(calc(100% / 11), 0.5rem);
+    column-gap: min(calc(100% / 11), 0.5rem);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.form-column {
+    grid-column-end: span 12;
+    grid-template-columns: minmax(0, 1fr);
+    display: grid;
+    grid-row-end: span 1;
+    grid-column-end: span 12;
+}
+
+.form-group-container {
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+    position: relative;
+    width: 100%;
+}
+
+.form-label {
+    color: blue;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: title;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.container-box{
+    color: gray;
+    position: relative;
+}
+
+.container-box-input-element {
+    outline: none;
+    -webkit-transition: background-color 200ms ease-in-out,box-shadow 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out,box-shadow 200ms ease-in-out;
+    border: 1px solid black;
+    border-color: gray;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    min-width: auto;
+    border-radius: 2px;
+    color: black;
+    background-color: white;
+    text-indent: 0;
+    padding-right: initial;
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
