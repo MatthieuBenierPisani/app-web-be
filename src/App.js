@@ -5,6 +5,7 @@ import Login from "./components/BeforeLogin/LoginComponent";
 import SignUp from "./components/BeforeLogin/SignUpComponent";
 import ForgottenPassword from "./components/BeforeLogin/ForgottenPassword";
 import Account from "./components/AfterLogin/Account";
+import ChangePassword from "./components/AfterLogin/ChangePassword";
 import FoireAuxQuestions from "./components/AfterLogin/FAQ";
 import Contact from "./components/AfterLogin/Contact";
 import Home from "./components/AfterLogin/Home";
@@ -28,6 +29,7 @@ function App() {
             <Route path="/faq" component={FoireAuxQuestions} />
             <Route path="/nous-contacter" component={Contact} />
             <Route path="/mon-compte" component={Account} />
+            <Route path="/changer-le-mot-de-passe" component={ChangePassword} />
           </Switch>
     </Router>
   );

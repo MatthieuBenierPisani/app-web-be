@@ -16,7 +16,7 @@ const Account = () => {
                             <a href="/mon-compte" className="menu-link">Informations personnelles</a>
                         </li>
                         <li className="menu-item">
-                            <a href="/mon-compte" className="menu-link">Changer le mot de passe</a>
+                            <a href="/changer-le-mot-de-passe" className="menu-link">Changer le mot de passe</a>
                         </li>
                         <li className="menu-item">
                             <a href="/mon-compte" className="menu-link">Supprimer le compte</a>
@@ -66,6 +66,11 @@ const Account = () => {
                                         </label>
                                         <div className="container-box">
                                             <input for="profile_image" name="profile_image" type="file" aria-invalid="false" aria-required="false" id="profile_image" className="container-box-input-element"></input>
+                                        </div>
+                                    </div>
+                                    <div className="form-group-container">
+                                        <div className="container-box">
+                                            <button className="update-button" type="submit" role="button">Enregistrer les modifications</button>
                                         </div>
                                     </div>
                                 </div>
