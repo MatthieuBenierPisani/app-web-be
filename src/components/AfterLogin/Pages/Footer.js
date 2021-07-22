@@ -27,6 +27,9 @@ const Footer = () => {
                         <li>
                             <Link to={"/accueil"}>Accueil</Link>
                         </li>
+                        <li>
+                            <Link to={"/mentions-legales"}>Mentions légales</Link>
+                        </li>
                     </ul>
             </div>
             </div>

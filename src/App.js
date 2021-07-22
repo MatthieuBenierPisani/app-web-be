@@ -12,6 +12,7 @@ import DeleteAccount from "./components/AfterLogin/Pages/DeleteAccount";
 import FoireAuxQuestions from "./components/AfterLogin/Pages/FAQ";
 import Contact from "./components/AfterLogin/Pages/Contact";
 import Home from "./components/AfterLogin/Pages/Home";
+import MentionsLegales from "./components/AfterLogin/Pages/LegalMentions";
 
 import Header from "./components/AfterLogin/Pages/Header";
 import Footer from "./components/AfterLogin/Pages/Footer";
@@ -34,6 +35,7 @@ function App() {
             <Route path="/mon-compte" component={Account} />
             <Route path="/changer-le-mot-de-passe" component={ChangePassword} />
             <Route path="/supprimer-le-compte" component={DeleteAccount} />
+            <Route path="/mentions-legales" component={MentionsLegales} />
           </Switch>
     </Router>
   );
