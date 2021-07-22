@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import logo from "./assets/be_logo.png";
+import logo from "../assets/be_logo.png";
 
 export default class ForgottenPassword extends Component {
     render() {

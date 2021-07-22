@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-import './Account.css';
+import '../Styles/Account.css';
 
 const ChangePassword = () => {
     return (
@@ -19,7 +19,7 @@ const ChangePassword = () => {
                             <a href="/changer-le-mot-de-passe" className="menu-link">Changer le mot de passe</a>
                         </li>
                         <li className="menu-item">
-                            <a href="/mon-compte" className="menu-link">Supprimer le compte</a>
+                            <a href="/supprimer-le-compte" className="menu-link">Supprimer le compte</a>
                         </li>
                     </ul>
                 </nav>

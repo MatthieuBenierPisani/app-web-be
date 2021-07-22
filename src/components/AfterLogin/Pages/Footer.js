@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import './Footer.css';
-import logo from './be_logo.png';
+import '../Styles/Footer.css';
+import logo from '../Assets/be_logo.png';
 
 const Footer = () => {
     return (

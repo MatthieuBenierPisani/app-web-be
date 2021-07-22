@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import './Header.css';
-import svg from './so.svg';
+import '../Styles/Header.css';
+import svg from '../Assets/so.svg';
+import logo from '../Assets/be_logo.png';
 
 const Header = () => {
     return (
@@ -10,9 +11,10 @@ const Header = () => {
         <div className="header-wrapper">
           <div className="header-inner">
             <div className="wrapper">
+              <img src={logo} alt="better-earth logo" style={{width: "200px"}}></img>
               <ul>
                 <li>
-                  <Link to={"/accueil"}>Se déconnecter <img src={svg} style={{width: "22px"}}/></Link>
+                  <Link to={"/"}>Se déconnecter <img src={svg} style={{width: "22px"}}/></Link>
                 </li>
                 <li>
                   <Link to={"/mon-compte"}>Mon compte</Link>
